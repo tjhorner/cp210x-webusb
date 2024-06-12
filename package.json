@@ -1,0 +1,19 @@
+{
+  "name": "cp210x-webusb",
+  "version": "1.0.0",
+  "description": "Configure CP210x devices using WebUSB",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [ "dist", "LICENSE", "README.md", "package.json" ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TJ Horner <me@tjhorner.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/w3c-web-usb": "^1.0.10",
+    "typescript": "^5.4.5"
+  }
+}
