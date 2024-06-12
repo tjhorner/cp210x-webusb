@@ -31,8 +31,9 @@ export class CP210XDevice {
       throw new Error("Descriptor string is too long")
     }
   
-    const out = new Uint8Array(256)
-    out[0] = len * 2 + 2
+    const packetSize = len * 2 + 2
+    const out = new Uint8Array(packetSize)
+    out[0] = packetSize
     out[1] = 0x03
   
     for (let i = 0, o = 2; i < len; ++i, o += 2) {
