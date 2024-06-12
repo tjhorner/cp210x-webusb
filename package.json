@@ -1,12 +1,13 @@
 {
   "name": "cp210x-webusb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configure CP210x devices using WebUSB",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [ "dist", "LICENSE", "README.md", "package.json" ],
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
